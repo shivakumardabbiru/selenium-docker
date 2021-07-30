@@ -1,0 +1,35 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name ="book-flight-suite" parallel="tests">
+    <test name = "book-flight-test1">
+        <parameter name ="noofpass" value ="2" />
+        <parameter name = "expectedprice" value = "$1169 USD" />
+        <classes>
+            <class name = "com.flightbook.test.BookFlight" />
+        </classes>
+    </test>
+
+    <test name = "book-flight-test2">
+        <parameter name ="noofpass" value ="3" />
+        <parameter name = "expectedprice" value = "$1150 USD" />
+        <classes>
+            <class name = "com.flightbook.test.BookFlight" />
+        </classes>
+    </test>
+
+    <test name = "book-flight-test3">
+        <parameter name ="noofpass" value ="4" />
+        <parameter name = "expectedprice" value = "$2240 USD" />
+        <classes>
+            <class name = "com.flightbook.test.BookFlight" />
+        </classes>
+    </test>
+
+    <test name = "book-flight-test4">
+        <parameter name ="noofpass" value ="1" />
+        <parameter name = "expectedprice" value = "$4500 USD" />
+        <classes>
+            <class name = "com.flightbook.test.BookFlight" />
+        </classes>
+    </test>
+
+</suite>
